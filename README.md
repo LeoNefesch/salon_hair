@@ -20,7 +20,7 @@ curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
 ```
 
-Перейти в директорию frontend-приложения проекта.
+Перейти в директорию frontend-приложения проекта:
 
 ```
 cd ./frontend/
