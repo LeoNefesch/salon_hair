@@ -1,15 +1,7 @@
 # Сайт для парикмахерской
 
-**Стэк технологий backend:**
- - терминал Linux;
- - Python;
- - Django;
- - djangorestframework;
- - djoser;
- - Pillow;
- - gunicorn;
- - nginx;
- - python-dotenv
+**Стэк технологий frontend:**
+ - чуть позже напишу всё
 
 ### Как запустить проект:
 
@@ -19,63 +11,31 @@
 git clone git@github.com:LeoNefesch/salon_hair.git
 ```
 
-##### Настройка backend-приложения проекта.
+##### Настройка frontend-приложения проекта.
 
-Перейти в директорию backend-приложения проекта.
-
-```
-cd salon_hair/backend/
-```
-
-Cоздать и активировать виртуальное окружение :
+Установить Node.js в комплекте с пакетным менеджером npm. Для этого из любой директории выполнить команду:
 
 ```
-python3 -m venv venv
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
 ```
 
-* Если у вас Linux/macOS
-
-    ```
-    source venv/bin/activate
-    ```
-    или
-    ```
-    . venv/bin/activate
-    ```
-
-* Если у вас windows
-
-    ```
-    source venv/scripts/activate
-    ```
-
-Обновить pip:
+Перейти в директорию frontend-приложения проекта.
 
 ```
-python3 -m pip install --upgrade pip
+cd ./frontend/
 ```
 
-Установить зависимости из файла requirements.txt:
+Установить зависимости для фронтенд-приложения:
 
 ```
-pip install -r requirements.txt
+npm install
 ```
 
-
-Нахадясь в папке с файлом manage.py, выполнить миграции:
-
-```
-python3 manage.py migrate
-```
-
-Запустить проект:
+Когда зависимости установятся, запустить приложение:
 
 ```
-python3 manage.py runserver
+npm run dev
 ```
 
-Остановить запущенное приложение и передать управление в терминал:
-
-```
-Ctrl + C
-```
+Все остальные команды в package.json
